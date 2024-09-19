@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    
+  <style>/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color:#640D5F;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header .navbar a:hover {
+    color:#000000;
+}
+
+/* Home Section */
+section.home {
+    padding: 2rem;
+    text-align: center;
+}
+
+#gallery {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+
+}</style> 
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>ABC Restaurant</a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+          <a href="index.jsp">Home</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="availability.html">Availability</a>
+          <a href="reservation.jsp">Reservations</a>
+          <a href="payment.jsp">Payment</a>
+          <a href="cusregister.jsp">Register Here</a>
+          <a href="login.jsp">Login</a>
+          <a href="query.jsp">Ask Queries from us</a>
+
+      </nav>
+  </header>
+  
+     <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/f.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/e.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/d.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/c.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/b.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/a.jpg">
+            </div>
+            
+           
+        </div>
+        
+    </section>
+    <section id="gallery">
+       
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/a.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/b.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/c.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/d.jpg" >
+            </div>
+            <div class="gallery-item">
+                <img src="images/e.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/f.jpg">
+            </div>
+            
+           
+        </div>
+        
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Facilities</title>
+    <link rel="stylesheet" href="facilities.css">
+    
+    <script>
+        function search() {
+            const input = document.getElementById('find').value.toLowerCase();
+            const products = document.getElementsByClassName('facility');
+            
+            for (let i = 0; i < products.length; i++) {
+                const title = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    products[i].style.display = '';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>ABC Restaurant</a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+          <a href="index.jsp">Home</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="availability.html">Availability</a>
+          <a href="reservation.jsp">Reservations</a>
+          <a href="payment.jsp">Payment</a>
+          <a href="cusregister.jsp">Register Here</a>
+          <a href="login.jsp">Login</a>
+          <a href="query.jsp">Ask Queries from us</a>
+
+      </nav>
+  </header>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="search">
+                <h1>Facilities we have for you</h1>
+                <input type="text" id="find" placeholder="Search Here...." onkeyup="search()">
+            </div>
+            <div class="facility-list">
+                <div class="facility">
+                 
+                    <h3>Swimming Pool</h3>
+                    <h4>A well-maintained pool area for relaxation and recreation, featuring sunbeds and poolside service.</h4>
+                </div>
+                <div class="facility">
+                   
+                    <h3>Fitness Center</h3>
+                    <h4>A fully equipped gym with modern workout machines and equipment for guests to maintain their fitness routine.</h4>
+                </div>
+                <div class="facility">
+                   
+                    <h3>Spa and Wellness</h3>
+                    <h4>A dedicated area offering a range of relaxation and beauty treatments, including massages, facials, and wellness therapies.</h4>
+                </div>
+                <div class="facility">
+                   
+                    <h3>Restaurant and Dining</h3>
+                    <h4>On-site dining options including a restaurant offering diverse cuisines, and room service for in-room dining.</h4>
+                </div>
+                <div class="facility">
+                   
+                    <h3>Business Center</h3>
+                    <h4>Facilities and services for business travelers, including meeting rooms, high-speed internet, and office supplies.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

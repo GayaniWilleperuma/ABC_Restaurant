@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="availabilty.css" />
+    
+   
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>ABC Restaurant</a>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+          <a href="index.jsp">Home</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="availability.html">Availability</a>
+          <a href="reservation.jsp">Reservations</a>
+          <a href="payment.jsp">Payment</a>
+          <a href="cusregister.jsp">Register Here</a>
+          <a href="login.jsp">Login</a>
+          <a href="query.jsp">Ask Queries from us</a>
+
+      </nav>
+  </header>
+
+    <div class="availability-form-container">
+    <h2>Check here </h2>
+    <form>
+        <div class="form-group">
+            <label for="serviceType">Service Type:</label>
+            <select id="serviceType" name="serviceType" required>
+                <option value="Dine-In">Dine-In</option>
+                <option value="Takeaway">Take-away</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit" class="check-btn">Check Availability</button>
+            <button type="button" class="cancel-btn">Cancel</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color:#640D5F;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header .navbar a:hover {
+    color:#000000;
+}
+
+.search {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Facility list styling */
+.facility-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.facility {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.facility h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+}
+
+.facility h4 {
+  font-size: 1rem;
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+.facility:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
