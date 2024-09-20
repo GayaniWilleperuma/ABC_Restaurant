@@ -31,5 +31,6 @@ public class Payments {
 		public void setPayment_status(String payment_status) {
 			this.payment_status = payment_status;
 		} 
+
 	    
 }
